@@ -1,0 +1,4 @@
+'# Cloud Git Practice' 
+first thing that I learn is how to create a file.
+second how to stage it like "git add<file>"
+third how to commit changes and check status.
