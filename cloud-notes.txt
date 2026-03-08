@@ -2,3 +2,35 @@
 first thing that I learn is how to create a file.
 second how to stage it like "git add<file>"
 third how to commit changes and check status.
+
+# Cloud Storage Services
+
+Cloud storage is a service that allows users to store data on remote servers that can be accessed through the internet. These servers are managed by cloud service providers.
+
+## Types of Cloud Storage Services
+
+1. Object Storage  
+Object storage stores data as objects. Each object contains the data, metadata, and a unique identifier. It is commonly used for storing large amounts of unstructured data such as images, videos, and backups.  
+Examples: Amazon S3, Google Cloud Storage, Azure Blob Storage.
+
+2. Block Storage  
+Block storage divides data into fixed-size blocks and stores them separately. It is mainly used for high-performance workloads such as databases and virtual machines.  
+Examples: Amazon EBS, Google Persistent Disk, Azure Managed Disks.
+
+3. File Storage  
+File storage stores data in a hierarchical structure using files and folders. It works similarly to traditional file systems and supports shared access.  
+Examples: Amazon EFS, Google Filestore, Azure Files.
+
+4. Archive Storage  
+Archive storage is used for long-term data storage that is accessed rarely. It is low cost but retrieving data may take more time.  
+Examples: Amazon S3 Glacier, Google Archive Storage, Azure Archive Storage.
+
+## Advantages of Cloud Storage
+
+- Scalability
+- Cost efficiency
+- High durability
+- Easy accessibility
+- Backup and disaster recovery
+
+Cloud storage services help organizations store, manage, and retrieve data efficiently without maintaining physical storage infrastructure.
