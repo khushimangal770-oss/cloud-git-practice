@@ -1,28 +1,16 @@
-name: Cloud Team CI Demo
-on:
- push:
- branches: [ main, develop ]
- pull_request:
- branches: [ main ]
+name: CI Example
+on: push
 jobs:
- validate:
- runs-on: ubuntu-latest
- steps:
- - name: Checkout Code
- uses: actions/checkout@v4
- - name: Print System Info
- run: |
- echo 'Cloud Department CI Running...'
- uname -a
- echo 'Repository: ${{ github.repository }}'
- echo 'Branch: ${{ github.ref_name }}'
- echo 'Triggered by: ${{ github.actor }}'
- - name: List Files
- run: ls -la
- - name: Validate README exists
+check-readme:
+runs-on: ubuntu-latest
+steps:
+-name:Checkout code
+ uses: actions/checkout@v3
+
+ - name: Check README 
  run: |
  if [ -f README.md ]; then
- echo 'README.md found - validation passed!'
+ echo 'README.md found - PASSED"
  else
  echo 'README.md missing - FAILED'
  exit 1
